@@ -5,19 +5,19 @@ body {
 /* MOBILE */
 
 .container {
-  border: 1px solid black;
   display: flex;
-  min-height: 100vh;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-top: 10px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
-.a {
-  min-height: 15vh;
-  min-width: 100vw;
-  border: 1px solid black;
-  background-color: red;
+.container * {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.a, .h {
+  flex: 1 0 100%;
 }
 
 .b {
@@ -87,9 +87,6 @@ body {
     margin: 1em;
   }
 
-  /* Can't figure out how to position the bcdef
-  together underneath a with h on the side */
-
   .b{
     border: 1px solid black;
     min-width: 20vw;
@@ -138,8 +135,4 @@ body {
   border: 1px solid black;
   background-color: white;
   }
-
-  /* Can't figure out how to position the bcdef
-  together underneath a with h on the side */
-  
 }
